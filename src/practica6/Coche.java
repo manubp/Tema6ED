@@ -12,6 +12,7 @@ package practica6;
  *
  */
 public class Coche {
+	
 	//Variables
 	private static final String NO_DISPONE_DE_INFORMACIÓN = "no dispone de información";
 	private static final String EL_COCHE_CON_MATRICULA = "El coche con matricula ";
@@ -34,21 +35,35 @@ public class Coche {
 		fabricante = f;
 	}
 
-	public String metodo1() {
+	/**
+	 * 
+	 * @return Nos devolvera información del coche dependiendo del combustible utilizado.
+	 * 
+	 */
+	
+	public String combustibleCoche() {
 		String resultado = "";
+		
 		if (combustible == "Gasolina") {
 			resultado += EL_COCHE_CON_MATRICULA + matricula + " ";
-			resultado += metodoA(modelo, fabricante);
-		} else if (combustible == "Diesel") {
+			resultado += gasolinaCoche(modelo, fabricante);
+		}
+		
+		else if (combustible == "Diesel") {
 			resultado += EL_COCHE_CON_MATRICULA + matricula + " ";
-			resultado += metodoB(modelo, fabricante);
-		} else if (combustible == "Híbrido") {
+			resultado += dieselCoche(modelo, fabricante);
+		}
+		
+		else if (combustible == "Híbrido") {
 			resultado += EL_COCHE_CON_MATRICULA + matricula + " ";
-			resultado += metodoC(modelo, fabricante);
-		} else {
+			resultado += hibridoCoche(modelo, fabricante);
+		}
+		
+		else {
 			resultado += EL_COCHE_CON_MATRICULA + matricula + " ";
 			resultado += NO_DISPONE_DE_INFORMACIÓN;
 		}
+		
 		return resultado;
 	}
 }
