@@ -12,6 +12,8 @@ package practica6;
  *
  */
 public class Coche {
+	//Variables
+	private static final String NO_DISPONE_DE_INFORMACIÓN = "no dispone de información";
 	private static final String EL_COCHE_CON_MATRICULA = "El coche con matricula ";
 	String matricula;
 	String combustible;
@@ -45,7 +47,7 @@ public class Coche {
 			resultado += metodoC(modelo, fabricante);
 		} else {
 			resultado += EL_COCHE_CON_MATRICULA + matricula + " ";
-			resultado += "no dispone de información";
+			resultado += NO_DISPONE_DE_INFORMACIÓN;
 		}
 		return resultado;
 	}
