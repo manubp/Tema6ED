@@ -14,12 +14,11 @@ package practica6;
 public class Coche {
 	
 	//Variables
-	private static final String NO_DISPONE_DE_INFORMACIÓN = "no dispone de información";
-	private static final String EL_COCHE_CON_MATRICULA = "El coche con matricula ";
-	String matricula;
-	String combustible;
-	String modelo;
-	String fabricante;
+	public static final String NO_DISPONE_DE_INFORMACIÓN = "no dispone de información";
+	
+	public static final String EL_COCHE_CON_MATRICULA = "El coche con matricula ";
+	
+	String matricula, combustible, modelo, fabricante;
 
 	public Coche() {
 		matricula = "";
@@ -79,17 +78,28 @@ public class Coche {
 	}
 	
 	
-
+	/**
+	 * 
+	 * @param modeloDelCoche
+	 * @param fabricanteDelCoche
+	 * @return Nos devolvera un String, el modelo, el fabricante y el precio euros/litro dependiendo del combustible
+	 */
+	
+	
+	//Metodo dieselCoche
 	public String dieselCoche(String modeloDelCoche	, String fabricanteDelCoche) {
 
 		return null;
 	}
 
+	//Metodo hibridoCoche
 	public String hibridoCoche(String modelmodeloDelCocheo2, String fabricanteDelCoche) {
 
 		return null;
 	}
 
+
+	//Metodo gasolinaCoche
 	public String gasolinaCoche(String modeloDelCoche, String fabricanteDelCoche) {
 
 		return null;
