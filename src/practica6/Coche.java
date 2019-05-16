@@ -66,4 +66,19 @@ public class Coche {
 		
 		return resultado;
 	}
+
+	private String dieselCoche(String modelo2, String fabricante2) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	private String hibridoCoche(String modelo2, String fabricante2) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public String gasolinaCoche(String modelo2, String fabricante2) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }
