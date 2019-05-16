@@ -45,40 +45,53 @@ public class Coche {
 		String resultado = "";
 		
 		if (combustible == "Gasolina") {
-			resultado += EL_COCHE_CON_MATRICULA + matricula + " ";
+			resultado = matriculaCoche();
 			resultado += gasolinaCoche(modelo, fabricante);
 		}
 		
 		else if (combustible == "Diesel") {
-			resultado += EL_COCHE_CON_MATRICULA + matricula + " ";
+			resultado = matriculaCoche();
 			resultado += dieselCoche(modelo, fabricante);
 		}
 		
 		else if (combustible == "Híbrido") {
-			resultado += EL_COCHE_CON_MATRICULA + matricula + " ";
+			resultado = matriculaCoche();
 			resultado += hibridoCoche(modelo, fabricante);
 		}
 		
 		else {
-			resultado += EL_COCHE_CON_MATRICULA + matricula + " ";
+			resultado = matriculaCoche();
 			resultado += NO_DISPONE_DE_INFORMACIÓN;
 		}
 		
 		return resultado;
 	}
 
-	private String dieselCoche(String modelo2, String fabricante2) {
-		// TODO Auto-generated method stub
+	/**
+	 * 
+	 * @param resultado
+	 * @return Nos devolvera un String ("El coche con matricula ") junto con la matricula.
+	 */
+	//Metodo matriculaCoche
+	public String matriculaCoche() {
+		
+		return EL_COCHE_CON_MATRICULA + matricula + " ";
+	}
+	
+	
+
+	public String dieselCoche(String modeloDelCoche	, String fabricanteDelCoche) {
+
 		return null;
 	}
 
-	private String hibridoCoche(String modelo2, String fabricante2) {
-		// TODO Auto-generated method stub
+	public String hibridoCoche(String modelmodeloDelCocheo2, String fabricanteDelCoche) {
+
 		return null;
 	}
 
-	public String gasolinaCoche(String modelo2, String fabricante2) {
-		// TODO Auto-generated method stub
+	public String gasolinaCoche(String modeloDelCoche, String fabricanteDelCoche) {
+
 		return null;
 	}
 }
