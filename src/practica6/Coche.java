@@ -44,23 +44,25 @@ public class Coche {
 		String resultado = "";
 		
 		if (combustible == "Gasolina") {
-			resultado = matriculaCoche();
-			resultado += gasolinaCoche(modelo, fabricante);
+			
+			resultado += matriculaCoche() + gasolinaCoche(modelo, fabricante);
 		}
 		
 		else if (combustible == "Diesel") {
-			resultado = matriculaCoche();
-			resultado += dieselCoche(modelo, fabricante);
+			
+			resultado += matriculaCoche() + gasolinaCoche(modelo, fabricante);
+
 		}
 		
 		else if (combustible == "Híbrido") {
-			resultado = matriculaCoche();
-			resultado += hibridoCoche(modelo, fabricante);
+
+
+			resultado += matriculaCoche() + gasolinaCoche(modelo, fabricante);
+
 		}
 		
 		else {
-			resultado = matriculaCoche();
-			resultado += NO_DISPONE_DE_INFORMACIÓN;
+			resultado = matriculaCoche() + NO_DISPONE_DE_INFORMACIÓN;
 		}
 		
 		return resultado;
@@ -89,19 +91,19 @@ public class Coche {
 	//Metodo dieselCoche
 	public String dieselCoche(String modeloDelCoche	, String fabricanteDelCoche) {
 
-		return null;
+		return "Es un " + fabricanteDelCoche + modeloDelCoche + " y gasta 1,052 euros por litro.";
 	}
 
 	//Metodo hibridoCoche
-	public String hibridoCoche(String modelmodeloDelCocheo2, String fabricanteDelCoche) {
+	public String hibridoCoche(String modeloDelCoche, String fabricanteDelCoche) {
 
-		return null;
+		return "Es un " + fabricanteDelCoche + modeloDelCoche + " y no necesita combustible.";
 	}
 
 
 	//Metodo gasolinaCoche
 	public String gasolinaCoche(String modeloDelCoche, String fabricanteDelCoche) {
 
-		return null;
+		return "Es un " + fabricanteDelCoche + modeloDelCoche + " y gasta 1,337 euros por litro.";
 	}
 }
