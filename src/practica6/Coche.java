@@ -1,6 +1,16 @@
 package practica6;
 
-
+/**
+ * Esta es la Clase Coche, en ella estudiaremos un total de 5 metodos
+ * que son los siguientes:
+ * combustibleCoche, matriculaCoche, gasolinaCoche, dieselCoche, hibridoCoche.
+ * 
+ * @author Manuel Barroso Pecellín
+ * 
+ * @version 2019
+ * 
+ *
+ */
 public class Coche {
 	String matricula;
 	String atrib;
