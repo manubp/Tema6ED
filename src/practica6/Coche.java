@@ -12,38 +12,39 @@ package practica6;
  *
  */
 public class Coche {
+	private static final String EL_COCHE_CON_MATRICULA = "El coche con matricula ";
 	String matricula;
-	String atrib;
+	String combustible;
 	String modelo;
 	String fabricante;
 
 	public Coche() {
 		matricula = "";
-		atrib = "";
+		combustible = "";
 		modelo = "";
 		fabricante = "";
 	}
 
 	public Coche(String m, String c, String mo, String f) {
 		matricula = m;
-		atrib = c;
+		combustible = c;
 		modelo = mo;
 		fabricante = f;
 	}
 
 	public String metodo1() {
 		String resultado = "";
-		if (atrib == "Gasolina") {
-			resultado += "El coche con matricula " + matricula + " ";
+		if (combustible == "Gasolina") {
+			resultado += EL_COCHE_CON_MATRICULA + matricula + " ";
 			resultado += metodoA(modelo, fabricante);
-		} else if (atrib == "Diesel") {
-			resultado += "El coche con matricula " + matricula + " ";
+		} else if (combustible == "Diesel") {
+			resultado += EL_COCHE_CON_MATRICULA + matricula + " ";
 			resultado += metodoB(modelo, fabricante);
-		} else if (atrib == "Híbrido") {
-			resultado += "El coche con matricula " + matricula + " ";
+		} else if (combustible == "Híbrido") {
+			resultado += EL_COCHE_CON_MATRICULA + matricula + " ";
 			resultado += metodoC(modelo, fabricante);
 		} else {
-			resultado += "El coche con matricula " + matricula + " ";
+			resultado += EL_COCHE_CON_MATRICULA + matricula + " ";
 			resultado += "no dispone de información";
 		}
 		return resultado;
